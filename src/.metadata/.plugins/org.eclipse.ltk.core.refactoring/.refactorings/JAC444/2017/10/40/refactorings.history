@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ca.jay.jac444.week5.lecture.TestSynchronization1.java&apos; to &apos;SynThread.java&apos;&#x0D;&#x0A;- Original project: &apos;JAC444&apos;&#x0D;&#x0A;- Original element: &apos;ca.jay.jac444.week5.lecture.TestSynchronization1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ca.jay.jac444.week5.lecture.SynThread.java&apos;" description="Rename compilation unit &apos;TestSynchronization1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;ca.jay.jac444.week5.lecture{TestSynchronization1.java" name="SynThread.java" references="false" stamp="1506968736482" version="1.0"/>
+</session>
