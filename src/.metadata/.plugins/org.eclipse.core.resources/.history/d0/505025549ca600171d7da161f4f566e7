@@ -1,0 +1,57 @@
+// http://letsgoturing.tistory.com/42
+
+package ca.jay.jac444.assignment1;
+
+import java.util.Scanner;
+class EightQueensGameSample {
+    public static int N ;
+    public static int [] cols;
+    public static void printcols(){
+      for(int i =1; i<=N; i++){
+          System.out.print(cols[i] + " ");
+      }      System.out.print("\n");
+    }
+    public static boolean promising(int level){
+        for(int i =1; i<level ; i++){
+            if(cols[i] == cols[level]){
+                return false;
+            }else if(level-i == Math.abs(cols[level]- cols[i]))
+                return false;
+        }
+        return true;
+    }
+    public static boolean queens(int level){
+        printcols();
+        if(!promising(level)){
+            return false;
+        }
+        else if(level == N){
+            System.out.print("=====RESULT=====\n");
+            printcols();
+
+            System.out.println("");
+            for(int i = 0; i < N; i++)
+            {
+            	for(in j = 0; j < N; j++)
+            	{
+            		if(cols[j] == j + 1) System.out.println("Q");
+            		else System.out.println("0");
+            	}
+            }
+            return true;
+        }
+        for(int i =1; i<=N; i++){
+            cols[level+1] = i;
+            if(queens(level+1)){
+                return true;
+            }
+        }
+        return false;
+    }
+    public static void main(String []args){
+        Scanner sc = new Scanner(System.in);
+        N = sc.nextInt();
+        cols = new int [N+1];
+        queens(0);
+    }
+}

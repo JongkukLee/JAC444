@@ -1,0 +1,11 @@
+package ca.jay.jac444;
+
+public class TestThrow1 {
+	
+	
+		public static void main(String args[]){
+
+			System.out.pintln("rest of the code");
+		  }  
+
+}

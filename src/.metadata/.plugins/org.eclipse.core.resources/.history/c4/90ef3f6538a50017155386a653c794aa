@@ -1,0 +1,16 @@
+package ca.jay.jac444;
+
+public class Student extends Person implements Talkable {
+
+	private String program;
+	
+	public Student(String name, Stirng l_name, String email, String program)
+	{
+		super(name, l_name, email);
+		this.program = program;
+		
+	}
+	
+	
+	
+}
