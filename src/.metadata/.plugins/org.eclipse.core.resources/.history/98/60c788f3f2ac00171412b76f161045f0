@@ -1,0 +1,28 @@
+package ca.jay.jac444.assignment1;
+
+import java.util.Date;
+
+public class TestAssinment1Task1 {
+
+	public static final String PREMIUM = "PREMIUM";
+	public static final String GOLD    = "GOLD";
+	public static final String SILVER  = "SILVER";		
+	
+	public static void main(String[] args) {
+		try
+		{
+			Visit[] visits = { 
+					new Visit ("Lee", new Date()),
+					new Visit ("Hong", new Date()),				
+					new Visit ("KIm", new Date())				
+			};
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+			
+		}
+	}
+
+}

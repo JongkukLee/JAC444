@@ -1,0 +1,55 @@
+package ca.jay.jac444.assignment1;
+
+import java.util.Date;
+
+public class TestAssinment1Task1 {
+
+	public static final String PREMIUM = "PREMIUM";
+	public static final String GOLD    = "GOLD";
+	public static final String SILVER  = "SILVER";		
+	
+	public static void main(String[] args) {
+		try
+		{
+			Visit[] visits = { 
+					new Visit ("Lee", new Date()),
+					new Visit ("Hong", new Date()),				
+					new Visit ("KIm", new Date()),
+					new Visit ("Jung", new Date())					
+			};
+			visits[0].customer.setMember(true);
+			visits[0].customer.setMemberType(PREMIUM);
+			visits[0].setServiceExpense(123.00d);
+			visits[0].setProductExpense(234.00d);			
+			
+			visits[1].customer.setMember(true);
+			visits[1].customer.setMemberType(GOLD);
+			visits[1].setServiceExpense(123.00d);
+			visits[1].setProductExpense(234.00d);			
+			
+			visits[2].customer.setMember(true);
+			visits[2].customer.setMemberType(SILVER);
+			visits[2].setServiceExpense(123.00d);
+			visits[2].setProductExpense(234.00d);			
+			
+			visits[3].customer.setMember(true);
+			visits[3].customer.setMemberType("");
+			visits[3].setServiceExpense(123.00d);
+			visits[3].setProductExpense(234.00d);
+			
+			for(Visit e: visits)
+			{
+				System.out.println(e);
+				System.out.println();				
+			}
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.toString());
+			System.out.println(e.printStackTrace());
+			
+		}
+	}
+
+}

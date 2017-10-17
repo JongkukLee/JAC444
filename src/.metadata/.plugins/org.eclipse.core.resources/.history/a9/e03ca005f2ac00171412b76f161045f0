@@ -1,0 +1,16 @@
+package ca.jay.jac444.assignment1;
+
+public class TestAssinment1Task1 {
+
+	public static void main(String[] args) {
+		Customer[] c1 = { 
+				new Customer("Lee"),
+				new Customer("Hong"),				
+				new Customer("Kim")				
+		};
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

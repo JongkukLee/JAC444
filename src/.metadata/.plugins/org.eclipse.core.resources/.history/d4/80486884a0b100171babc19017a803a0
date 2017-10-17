@@ -1,0 +1,11 @@
+package ca.jay.jac444.week6.homework;
+
+public class Lab6Task4 {
+
+	public static void main(String[] args)
+	{
+		Lab6Task2 loan = new Lab6Task2(2.5, 5, 1000);
+		
+	}
+	
+}

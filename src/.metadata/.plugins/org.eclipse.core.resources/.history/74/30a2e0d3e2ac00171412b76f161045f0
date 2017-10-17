@@ -1,0 +1,29 @@
+package ca.jay.jac444.assignment1;
+
+/************************************************************************
+ *  Compilation:  Customer.java
+ *  Execution:    
+ *
+ *  This class represent the customer for beauty salon
+ *  and has 3 types of memberships: Premium, Gold and Silver. 
+ *  Display two numbers in decimal, binary, octal and hexadecimal
+ *  and the result of all the bitwise operations
+ *
+ *  Exercise 2 - Lab 1
+ *
+ *  Output
+ *  84  1010100  0124  0X54
+ *  327  101000111  0507  0X147
+ *  68  1000100  0104  0X44
+ *  343  101010111  0527  0X157
+ *  275  100010011  0423  0X113
+ *  -328  11111111111111111111111010111000  037777777270  0Xfffffeb8
+ *
+ * @author Jordan Anastasiade
+ * @version 1.2
+ * @since 2000-02-11
+ ************************************************************************/
+
+public class Customer {
+
+}

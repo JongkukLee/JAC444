@@ -22,5 +22,30 @@
 		</list>
 	</section>
 	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab1"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect1"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab2"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect2"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab4"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect6"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab6"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect3"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab3"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect5"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab5"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect4\exception"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect4\clone"/>
+			<item value="C:\Users\reeve\Downloads\4th Semester\JAC444\Lab\Lab4\Solution_Lab_4\Solution_Lab_4\Task2"/>
+			<item value="C:\Users\reeve\Downloads\4th Semester\JAC444\Lab\Lab4\Solution_Lab_4\Solution_Lab_4"/>
+		</list>
 	</section>
 </section>
