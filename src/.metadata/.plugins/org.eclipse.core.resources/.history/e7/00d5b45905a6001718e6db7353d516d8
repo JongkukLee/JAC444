@@ -1,5 +1,0 @@
-package ca.jay.jac444;
-
-public interface Talkable {
-	void say();
-}

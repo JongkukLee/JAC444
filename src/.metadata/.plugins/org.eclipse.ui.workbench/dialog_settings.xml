@@ -31,21 +31,26 @@
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab1"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect1"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab2"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect2"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab4"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect6"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab6"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect3"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab3"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect5"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab5"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect4\exception"/>
-			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect4\clone"/>
-			<item value="C:\Users\reeve\Downloads\4th Semester\JAC444\Lab\Lab4\Solution_Lab_4\Solution_Lab_4\Task2"/>
-			<item value="C:\Users\reeve\Downloads\4th Semester\JAC444\Lab\Lab4\Solution_Lab_4\Solution_Lab_4"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab11\grep"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab11\file"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab11\car"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab10\sol-lab10"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab9\sort"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Homework\Solutions\solutions_lab8"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect9_set\set"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect9_map\map"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect9_list\list"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect9_basic\basic"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect9_algo\algo"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect8_streams\streams"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect8_intro\intro"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect8_basics\basics"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect8_adv\advanced"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect13_db"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect11_squarematrix\squarematrix"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect11_hello\hello"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect11_calc\calc"/>
+			<item value="C:\Users\reeve\Downloads\WEB-Seneca-2017\JAC444\Lecture\Sample code\samples_lect10_server\server"/>
 		</list>
 	</section>
 </section>
