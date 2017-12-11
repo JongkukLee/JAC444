@@ -1,0 +1,7 @@
+package ca.jay.jac444.workshop2;
+
+public interface BusinessRuleIF {
+
+	// check rule
+	public boolean ruleCheck(int v1, int v2, int v3);
+}

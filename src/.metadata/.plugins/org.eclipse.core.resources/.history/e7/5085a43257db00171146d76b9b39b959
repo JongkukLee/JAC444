@@ -1,0 +1,8 @@
+package ca.jay.jac444.workshop2;
+
+public interface HangmanGameIF {
+
+	public static final String GUESS_LETTER = "*"; 
+	
+	
+}

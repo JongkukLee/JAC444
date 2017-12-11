@@ -1,0 +1,61 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+@FunctionalInterface
+interface W3MapFuncObj
+{
+	public void increaseCount(String key);
+}
+
+public class W3Task1 {
+
+	public static void main(String[] args) throws Exception
+	{
+		// check command-line argument
+		if(args != null && args.length == 0)
+		{
+			System.err.println("It needs a command-line argument for a file name");
+			System.exit(0);
+		}
+		
+		// store word lists from the file		
+		List<String> words = Arrays.asList(W3TaskUtil.getWordLines(args[0]));
+		words.stream().filter(k -> k.length() > 0).map(m -> m.toLowerCase());		
+		
+		// Create a TreeMap to hold words as key and count as value 
+		Map<String, Integer> map = new TreeMap<>(); 
+ 
+		W3MapFuncObj func = (key) -> {
+			if (!map.containsKey(key)) 
+			{ 
+				map.put(key, 1); 
+			} 
+			else 
+			{ 
+				int value = map.get(key); 
+				value++; 
+				map.put(key, value); 
+			} 
+		};
+		
+		// 
+		for (String e: words) func.increaseCount(e);
+ 
+		// Get all entries into a set	 
+		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
+	 
+		// Get key and value from each entry 
+		for (Map.Entry<String, Integer> entry: entrySet) 
+			System.out.println(entry.getValue() + "\t" + entry.getKey()); 
+		
+		//OR replace the get all entries with Lambda Expression 
+		map.forEach((k, v) -> System.out.println(v + "\t" + k)); 
+	} 	
+	
+}
+

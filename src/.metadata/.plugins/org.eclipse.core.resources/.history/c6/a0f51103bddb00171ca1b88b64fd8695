@@ -1,0 +1,5 @@
+package ca.jay.jac444.workshop2;
+
+public interface BusinessRuleIF {
+
+}

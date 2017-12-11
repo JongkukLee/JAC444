@@ -1,0 +1,21 @@
+package ca.jay.jac444.workshop2;
+
+import java.util.Vector;
+
+public class TriangleBusinessRule<T> implements BusinessRuleIF<T> {
+
+	
+	// check rule
+	public boolean ruleCheck(Vector<T> valList)
+	{
+		T s1 = valList.get(0);		
+		T s2 = valList.get(1);		
+		T s3 = valList.get(2);		
+		
+		
+		
+		
+		
+		return true;
+	}
+}

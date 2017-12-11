@@ -53,6 +53,7 @@ public class Point implements PointInterface {
 		double d = 0.0;
 		double dx2 = (x - toX) * (x - toX);
 		double dy2 = (y - toY) * (y - toY);
+		
 		d = Math.sqrt(dx2 + dy2);
 		return d;
 	}

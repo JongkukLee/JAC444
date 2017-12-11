@@ -26,7 +26,7 @@ public class Outer {
         // shadow variable
         private int x;
         public Inner(int x) {
-            this.x = x;
+        	this.x = x;
         }
     }
 

@@ -21,14 +21,14 @@ public class ExtractSubtitle {
     public static void main(String[] args) throws IOException {
 
         try (
-                BufferedReader inputBuffer = new BufferedReader(new FileReader("The National for Friday November 3, 2017.srt"));
-                PrintWriter outputBuffer = new PrintWriter(new FileWriter("The National for Friday November 3, 2017.txt"));
+                BufferedReader inputBuffer = new BufferedReader(new FileReader("[DownSub.com]Parent Teacher Conference Part 2.srt"));
+                PrintWriter outputBuffer = new PrintWriter(new FileWriter("[DownSub.com]Parent Teacher Conference Part 2.html"));
         ) {
             String line;
             while ((line = inputBuffer.readLine()) != null)
             {
            		if(line.length() > 0 && !java.lang.Character.isDigit(line.charAt(0)))
-            		outputBuffer.println(line);
+            		outputBuffer.println(line + "<br />");
             }
             System.out.println("done!!!");
 
