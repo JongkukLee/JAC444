@@ -1,50 +1,50 @@
+/**********************************************
+ Course:JAC444 - 4
+ Last Name: Lee
+ First Name: Jongkuk
+ ID: 127730158
+ Section: SCC
+ This assignment represents my own work in accordance with
+ Seneca Academic Policy.
+ Signature JK Lee
+ Date: 2017-12-14
+**********************************************/
 package ca.jay.jac444.workshop3;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
-
+//This class implements the task1 of WorkWhop3
 public class W3Task1 {
-
+	// write test program
 	public static void main(String[] args) throws Exception
 	{
-		// check command-line argument
-		if(args != null && args.length == 0)
+		try
 		{
-			System.err.println("It needs a command-line argument for a file name");
-			System.exit(0);
-		}
+			// The text file name is passed as a command-line argument
+			// check command-line argument count
+			if(args != null && args.length == 0)
+				throw new IllegalArgumentException(W3TaskIF.ERR1_MSG);
 
-		// Create a TreeMap to hold words as key and count as value 
-		Map<String, Integer> map = new TreeMap<>();		
-		
-		// store word lists from the file		
-		List<String> words = Arrays.asList(W3TaskUtil.getWordLines(args[0]));
-		
-		words.stream()
-		.filter(k -> k.length() > 0)
-		.map(m -> m.toLowerCase())
-		.forEach(
-			(k) -> {
-				if (!map.containsKey(k)) 
-					map.put(k, 1); 
-				else 
-					map.put(k, map.get(k) + 1); 
-			}				
-		);
- 
-		// Get all entries into a set	 
-		Set<Map.Entry<String, Integer>> entrySet = map.entrySet();
-	 
-		// Get key and value from each entry 
-		for (Map.Entry<String, Integer> entry: entrySet) 
-			System.out.println(entry.getValue() + "\t" + entry.getKey()); 
-		
-		//OR replace the get all entries with Lambda Expression 
-		map.forEach((k, v) -> System.out.println(v + "\t" + k)); 
-	} 	
-	
+			// crate new object 
+			CountOccurrenceOfWords w3 = new CountOccurrenceOfWords(); 
+			
+			// get TreeMap consisting of a word and its count
+			// get all entries with Lambda Expression and display
+			// display the output in alphabetical order of words because of TreeMap
+			w3.getCountOccrenceOfWords(args[0])
+			.forEach((k, v) -> System.out.println(v + "\t" + k));
+		}
+		catch(Workshop3Exception we)
+		{
+			System.out.println(we.getMessage());
+		}		
+		catch(IllegalArgumentException ie)
+		{
+			System.out.println(ie.getMessage());
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
 }
 

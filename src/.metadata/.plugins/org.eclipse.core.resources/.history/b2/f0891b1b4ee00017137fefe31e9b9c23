@@ -1,0 +1,50 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public class BusinessRuleCheck03 implements BusinessRuleCheckIF {
+
+    /** 
+     * check if the three numbers match in the exact order 
+     * 
+     * @param index 0 of list : target numbers, 1 : source numbers      
+     * @return boolean according to matching: match - true; otherwise; false 
+     */ 
+	public boolean check(List<String> args)
+	{
+	    int target = new Integer(args.get(0));
+	    int source = new Integer(args.get(1));
+
+		// Get digits from lottery
+	    int lotteryDigit1 = target / 100;
+	    int lotteryDigit2 = target % 100 / 10;
+	    int lotteryDigit3 = target % 10;
+	
+	    // Get digits from guess
+	    int guessDigit1 = target / 100;
+	    int guessDigit2 = target % 100 / 10;
+	    int guessDigit3 = target % 10;	    
+	    
+	    return 	(
+		    		(  	guessDigit1 == lotteryDigit1 || 
+			           	guessDigit1 == lotteryDigit2 ||
+			           	guessDigit1 == lotteryDigit3
+			        )
+			        && 
+			        (	guessDigit2 == lotteryDigit1 ||
+			         	guessDigit2 == lotteryDigit2 ||
+			         	guessDigit2 == lotteryDigit3
+			        )
+			        && 
+			        (	guessDigit3 == lotteryDigit1 ||
+			         	guessDigit3 == lotteryDigit2 ||
+			         	guessDigit3 == lotteryDigit3
+			         )
+			        && 
+			        target == source
+		        );
+	    
+	    
+	    return target == source;
+	}
+}

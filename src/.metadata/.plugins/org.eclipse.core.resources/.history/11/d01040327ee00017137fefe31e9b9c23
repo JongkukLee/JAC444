@@ -1,0 +1,21 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.InputMismatchException;
+
+public class W3Task2 {
+    public static void main(String[] args) 
+    {
+    	try
+    	{
+    		new LotteryGame().startLotteryGame();
+    	}
+    	catch(Workshop3Exception we)
+    	{
+    		System.out.println(we.getMessage());
+    	}
+    	catch(Exception e)
+    	{
+    		e.printStackTrace();    		
+    	}
+    }
+}

@@ -1,0 +1,5 @@
+package ca.jay.jac444.workshop3;
+
+public class BusinessRuleCheck02 implements BusinessRuleCheckIF {
+
+}

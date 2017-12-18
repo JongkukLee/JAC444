@@ -1,0 +1,28 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public class BusinessRuleCheck02 implements BusinessRuleCheckIF {
+
+    /** 
+     * check if the three numbers match in the exact order 
+     * 
+     * @param index 1 ~ 3 of list : target numbers, 4 ~ 6 : source numbers      
+     * @return boolean according to matching 
+     */ 
+
+	public boolean check(List<String> args)
+	{
+		int target1 = new Integer(args.get(0));
+		
+	    int guessSum = guessDigit1 + guessDigit2 + guessDigit3;
+	    int lotterySum = lotteryDigit1 + lotteryDigit2 + lotteryDigit3;		
+		
+    	// check if the words must start with a letter. 
+    	for(String e: args)
+    		if(e.length() > 0 && Character.isDigit(e.charAt(0)))
+    			return false;
+    	
+    	return true;
+	}
+}

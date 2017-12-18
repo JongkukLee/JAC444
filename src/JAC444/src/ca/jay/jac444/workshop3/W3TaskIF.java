@@ -12,13 +12,15 @@
 package ca.jay.jac444.workshop3;
 
 //This interface declares constants to play Hangman Game 
-public interface W3TaskIF {
-
+public interface W3TaskIF 
+{
+	public static final int LOTTERY_NUM = 456;
 	public static final String DELIMITE_CHARS = "[ \n\t\r.,;:!?(){}]"; 
-	
-	public static final String MSG1_ASK_ENTER = "(Guess) Enter a letter in word ";
-	public static final String MSG2_CHK_VALUE = "\t%s is already in the word\n";
-	public static final String MSG3_CHK_VALUE = "\t%s is not in the word\n";
-	public static final String MSG4_DSP_RESUT = "The word is program. You missed %d time";
-	public static final String MSG5_ASK_AGAIN = "Do you want to guess another word? Enter y or n> ";
+	public static final String ERR1_MSG = "It needs a command-line argument for a file name";
+	public static final String ERR2_MSG = "Please, enter a three-digit number";	
+	public static final String MSG_0001 = "The words in the file must start with a letter.";	
+	public static final String MSG_0002 = "Enter your lottery pick (three digits): ";
+	public static final String MSG_0003 = "You win $";
+	public static final String MSG_0004 = "Sorry, no match!!!";	
+	public static final String MSG_0005 = "Please, start again!";
 }

@@ -1,9 +1,0 @@
-package ca.jay.jac444.workshop2;
-
-import java.util.Map;
-
-public interface BusinessRuleIF {
-
-	// check rule
-	public boolean ruleCheck(Map valList);
-}

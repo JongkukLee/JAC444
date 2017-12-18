@@ -1,3 +1,11 @@
 1512945820983	Copy compilation units
 1512945860379	Rename type 'HangmanGameIF'
 1512945880480	Rename type 'HangmanGameUtil'
+1513163935617	Copy compilation units
+1513164015896	Rename type 'IllegalTriangleException'
+1513164040732	Rename type 'TriangleBusinessRule'
+1513191733420	Rename type 'BusinessRuleImpl'
+1513191759825	Rename type 'BusinessRuleFactoryImpl'
+1513195309750	Rename type 'BusinessRuleIF'
+1513195326243	Rename type 'BusinessRuleImpl'
+1513292142891	Delete element

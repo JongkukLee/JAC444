@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="getGameWords" key="selection"/>
+		<item value="displayMatrix" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="displayMatrix"/>
+			<item value="limit"/>
+			<item value="input"/>
 			<item value="getGameWords"/>
 			<item value="Scanner"/>
 			<item value="HangmanGameIF."/>
 			<item value="isExistInArray"/>
 			<item value="missCnt"/>
-			<item value="isTheWordGuessed"/>
-			<item value="MSG4_DSP_RESUT"/>
-			<item value="MSG3_CHK_VALUE"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

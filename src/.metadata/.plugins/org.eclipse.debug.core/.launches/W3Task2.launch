@@ -7,5 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="ca.jay.jac444.workshop3.W3Task2"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="test.java"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="JAC444"/>
 </launchConfiguration>

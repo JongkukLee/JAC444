@@ -1,9 +1,0 @@
-package ca.jay.jac444.workshop2;
-
-import java.util.Vector;
-
-public interface BusinessRuleIF<T extends Integer> {
-
-	// check rule
-	public boolean ruleCheck(Vector<T> valList);
-}

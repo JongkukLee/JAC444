@@ -1,0 +1,27 @@
+/**********************************************
+ Course:JAC444 - 4
+ Last Name: Lee
+ First Name: Jongkuk
+ ID: 127730158
+ Section: SCC
+ This assignment represents my own work in accordance with
+ Seneca Academic Policy.
+ Signature JK Lee
+ Date: 2017-12-8
+**********************************************/
+package ca.jay.jac444.workshop3;
+
+public class BusinessRuleImpl implements BusinessRuleIF {
+	
+	// check rule
+	public void ruleCheck(String ruleId, String msg)
+	{
+		
+		
+		
+    	// check if the words must start with a letter. 
+    	for(String e: valList)
+    		if(e.length() > 0 && Character.isDigit(e.charAt(0)))
+    			throw new Workshop3Exception(ERR2_MSG);		
+	}
+}

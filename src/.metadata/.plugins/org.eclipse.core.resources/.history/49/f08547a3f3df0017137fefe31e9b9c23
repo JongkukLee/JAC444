@@ -1,0 +1,68 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+
+// this class implements a program that counts the occurrences of words 
+// in a text and displays the words and their occurrences in alphabetical 
+// order of the words. 
+
+public class W3Task1 implements W3TaskIF {
+
+	public Map<String, Integer> CountOccrenceOfWords(String filename) throws Exception
+	{
+		// create a TreeMap to hold words as key and count as value 
+		Map<String, Integer> map = new TreeMap<>();		
+		
+		// store and get the word lists from the file		
+		List<String> words = Arrays.asList(W3TaskUtil.getWordLines(filename));
+		
+		words.stream()
+		.filter(k -> k.length() > 0)
+		.map(m -> m.toLowerCase())
+		.forEach(
+			(k) -> {
+				if (!map.containsKey(k)) 
+					map.put(k, 1); 
+				else 
+					map.put(k, map.get(k) + 1);
+			}
+		);
+ 
+		return map;
+	}
+	
+	
+	public static void main(String[] args) throws Exception
+	{
+		try
+		{
+			// check command-line argument
+			if(args != null && args.length == 0)
+			{
+				throw new IllegalArgumentException(ERR1_MSG);
+				System.exit(0);
+			}			
+			
+			W3Task1 w3 = new W3Task1(); 
+			
+			// get all entries with Lambda Expression and display			
+			w3.CountOccrenceOfWords(args[0])
+			.forEach((k, v) -> System.out.println(v + "\t" + k));
+		}
+		catch(IllegalArgumentException ie)
+		{
+			
+			
+		}
+		catch(Exception e)
+		{
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	}
+}
+

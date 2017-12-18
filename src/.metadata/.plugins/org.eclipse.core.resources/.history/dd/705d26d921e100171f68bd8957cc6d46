@@ -1,0 +1,35 @@
+/**********************************************
+ Course:JAC444 - 4
+ Last Name: Lee
+ First Name: Jongkuk
+ ID: 127730158
+ Section: SCC
+ This assignment represents my own work in accordance with
+ Seneca Academic Policy.
+ Signature JK Lee
+ Date: 2017-12-14
+**********************************************/
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public interface BusinessRuleFactoryIF {
+
+	public static final String BR_ID_0001= "BR0001";
+	public static final String BR_CLASS_0001= "ca.jay.jac444.workshop3.BusinessRuleCheck01";
+	
+	public static final String BR_ID_0002= "BR0002";
+	public static final String BR_CLASS_0002= "ca.jay.jac444.workshop3.BusinessRuleCheck02";
+	
+	public static final String BR_ID_0003= "BR0003";
+	public static final String BR_CLASS_0003= "ca.jay.jac444.workshop3.BusinessRuleCheck03";
+	
+	public static final String BR_ID_0004= "BR0004";
+	public static final String BR_CLASS_0004= "ca.jay.jac444.workshop3.BusinessRuleCheck04";	
+	
+	public static final String BR_ID_0005= "BR0005";
+	public static final String BR_CLASS_0005= "ca.jay.jac444.workshop3.BusinessRuleCheck05";	
+	
+	// check rule
+	public boolean ruleCheck(String ruleId, List<String> list);	
+}

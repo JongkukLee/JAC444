@@ -1,0 +1,8 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public interface BusinessRuleCheckIF {
+
+	public static void check(List<String> args, String msg) throws Exception;
+}

@@ -1,0 +1,16 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public class BusinessRuleCheck01 implements BusinessRuleCheckIF {
+
+	public boolean check(List<String> args, String msg)
+	{
+    	// check if the words must start with a letter. 
+    	for(String e: args)
+    		if(e.length() > 0 && Character.isDigit(e.charAt(0)))
+    			return false;
+    	
+    	return true;
+	}
+}

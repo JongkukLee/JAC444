@@ -1,0 +1,56 @@
+package ca.jay.jac444.workshop3;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+// This class implements to generate a lottery of a three digit 
+// number. The program prompts the user to enter a three-digit number 
+// and determines whether the user wins according to the following rules
+
+public class LotteryGame implements W3TaskIF
+{
+	public void startLotteryGame()
+	{
+	    int lottery = LOTTERY_NUM;
+		
+	    // Prompt the user to enter a guess
+	    Scanner input = new Scanner(System.in);
+	    System.out.print("Enter your lottery pick (three digits): ");
+	    int guess = input.nextInt();
+	    
+    	// check if the words must start with a letter. 
+    	BusinessRuleFactoryImpl br = new BusinessRuleFactoryImpl();	    
+	    List<String> brArgs = new ArrayList<>();
+	    brArgs.add(new Integer(lottery).toString());
+	    brArgs.add(new Integer(guess).toString());
+	    
+	    int award  = 0;
+	    // rule1: check if the user input matches the lottery number in the exact order
+	    if (award == 0 && br.ruleCheck(BusinessRuleFactoryIF.BR_ID_0002, brArgs))
+	    	award = 10000;
+	    // rule2: check if all digits in the user input match all digits in the lottery number  
+    	brArgs.add(new Integer(3).toString());
+	    if (award == 0 && br.ruleCheck(BusinessRuleFactoryIF.BR_ID_0003, brArgs))      
+	    	award = 3000;
+	    // add rule
+    	brArgs.remove(2);
+    	brArgs.add(new Integer(2).toString());	    
+	    if(award == 0 && br.ruleCheck(BusinessRuleFactoryIF.BR_ID_0004, brArgs))
+	    	award = 2000;	    	
+	    // rule3
+    	brArgs.remove(2);
+    	brArgs.add(new Integer(1).toString()); 	    
+	    if (award == 0 && br.ruleCheck(BusinessRuleFactoryIF.BR_ID_0004, brArgs))   
+	    	award = 1000;
+	
+	    // display the result
+	    if(award != 0)
+	    	System.out.println("You win $" + award);	    
+	    else
+	    	System.out.println("Sorry, no match");
+	    
+	    input.close();		
+		
+	}
+}

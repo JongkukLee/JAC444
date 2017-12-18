@@ -1,0 +1,22 @@
+/**********************************************
+ Course:JAC444 - 4
+ Last Name: Lee
+ First Name: Jongkuk
+ ID: 127730158
+ Section: SCC
+ This assignment represents my own work in accordance with
+ Seneca Academic Policy.
+ Signature JK Lee
+ Date: 2017-12-8
+**********************************************/
+package ca.jay.jac444.workshop3;
+
+import java.util.Vector;
+
+public interface BusinessRuleIF<T extends Number> {
+
+	public static final String ERR1_MSG = "It needs a command-line argument for a file name";
+	public static final String ERR2_MSG = "The words in the file must start with a letter."; 
+	// check rule
+	public void ruleCheck(String val) throws Exception;	
+}

@@ -1,0 +1,23 @@
+/**********************************************
+ Course:JAC444 - 4
+ Last Name: Lee
+ First Name: Jongkuk
+ ID: 127730158
+ Section: SCC
+ This assignment represents my own work in accordance with
+ Seneca Academic Policy.
+ Signature JK Lee
+ Date: 2017-12-8
+**********************************************/
+package ca.jay.jac444.workshop3;
+
+import java.util.List;
+
+public interface BusinessRuleFactoryIF {
+
+	public static final String BRID0001= "BR0001";
+	public static final String BRCLASS0001= "ca.jay.jac444.workshop3.BusinessRuleCheck01";	
+	
+	// check rule
+	public boolean ruleCheck(String ruleId, List<String> list); //throws Exception; //ClassNotFoundException;	
+}

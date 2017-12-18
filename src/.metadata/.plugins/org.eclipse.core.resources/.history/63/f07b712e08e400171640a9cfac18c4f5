@@ -1,0 +1,51 @@
+package ca.jay.jac444.workshop4;
+
+import java.net.*;
+import java.io.*;
+
+public class EchoServer {
+
+	public static void main(String[] args) throws IOException
+	{
+		if(args.length != 1) {
+			System.err.println("error");
+			System.exit(1);
+		}
+		
+		int portNumber = Integer.parseInt(args[0]);
+		ServerSocket serverSocket = null;
+		
+		try
+		{
+			serverSocket = 
+					new ServerSocket(portNumber);
+		}
+		catch(Exception e)
+		{
+			
+		}
+		while(true){
+			 
+			ClientWorker w;
+			 
+			try{
+			 
+			//server.accept returns a client connection
+			 
+			w = new ClientWorker(serverSocket.accept());
+			 
+			Thread t = new Thread(w);
+			 
+			t.start();
+			 
+			}catch(IOException e){
+			 
+			System.out.println("Accept failed: 4444");
+			 
+			System.exit(-1);
+			 
+			}
+		}
+	}
+
+}

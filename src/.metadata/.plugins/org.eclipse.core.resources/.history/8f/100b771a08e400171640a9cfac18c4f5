@@ -1,0 +1,30 @@
+package ca.jay.jac444.workshop4;
+
+import java.net.*;
+import java.io.*;
+
+public class EchoServer {
+
+	public static void main(String[] args) throws IOException
+	{
+		if(args.length != 1) {
+			System.err.println("error");
+			System.exit(1);
+		}
+		
+		int portNumber = Integer.parseInt(args[0]);
+		ServerSocket serverSocket = null;
+		
+		try
+		{
+			serverSocket = 
+					new ServerSocket(portNumber);
+		}
+		catch(Exception e)
+		{
+			
+		}
+
+	}
+
+}
